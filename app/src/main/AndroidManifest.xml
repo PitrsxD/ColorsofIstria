@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.svobodapeter.colorsofistria">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.Light">
+        <activity android:name=".CitiesMainActivity" android:label="Colours of Istria" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".InfoAboutCityBuje" android:parentActivityName=".CitiesMainActivity" android:label="Buje" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".InfoAboutCityBrtonigla" android:parentActivityName=".CitiesMainActivity" android:label="Brtonigla" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".InfoAboutCityNovigrad" android:parentActivityName=".CitiesMainActivity" android:label="Novigrad" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".InfoAboutCityUmag" android:parentActivityName=".CitiesMainActivity" android:label="Umag" android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

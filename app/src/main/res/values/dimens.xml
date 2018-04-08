@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Dimensions for android phone.
+-->
+<resources>
+    <dimen name="margin_top_bottom">10dp</dimen>
+    <dimen name="margin_start_end">8dp</dimen>
+</resources>
