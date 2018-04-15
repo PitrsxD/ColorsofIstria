@@ -30,6 +30,7 @@ public class CityServiceFragment extends android.support.v4.app.Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.city_service, container, false);
 
+        //Condition will select method according to the context.
         Context context = getContext();
         this.context = context;
         if (this.context instanceof InfoAboutCityUmag) {
@@ -51,48 +52,52 @@ public class CityServiceFragment extends android.support.v4.app.Fragment {
         return rootView;
     }
 
+    //Method which will fill create array with adapter and fill with data - for city Buje
     private void callingBuje() {
         final ArrayList<ObjectOfInterest> object = new ArrayList<>();
-        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe, "Object", "Object description", "geo:0,0"));
-        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe, "Object", "Object description", "geo:0,0"));
-        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe, "Object", "Object description", "geo:0,0"));
-        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe, "Object", "Object description", "geo:0,0"));
+        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe,  getString(R.string.NameOfObject), getString(R.string.objectDescription), "geo:0,0"));
+        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe,  getString(R.string.NameOfObject), getString(R.string.objectDescription), "geo:0,0"));
+        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe,  getString(R.string.NameOfObject), getString(R.string.objectDescription), "geo:0,0"));
+        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe,  getString(R.string.NameOfObject), getString(R.string.objectDescription), "geo:0,0"));
 
         ObjectOfInterestAdapter objectAdapter = new ObjectOfInterestAdapter(getActivity(), object);
         final ListView listView = rootView.findViewById(R.id.services_list);
         listView.setAdapter(objectAdapter);
     }
 
+    //Method which will fill create array with adapter and fill with data - for city Novigrad
     private void callingNovigrad() {
         final ArrayList<ObjectOfInterest> object = new ArrayList<>();
-        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe, "Object", "Object description", "geo:0,0"));
-        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe, "Object", "Object description", "geo:0,0"));
-        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe, "Object", "Object description", "geo:0,0"));
-        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe, "Object", "Object description", "geo:0,0"));
+        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe,  getString(R.string.NameOfObject), getString(R.string.objectDescription), "geo:0,0"));
+        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe,  getString(R.string.NameOfObject), getString(R.string.objectDescription), "geo:0,0"));
+        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe,  getString(R.string.NameOfObject), getString(R.string.objectDescription), "geo:0,0"));
+        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe,  getString(R.string.NameOfObject), getString(R.string.objectDescription), "geo:0,0"));
         ObjectOfInterestAdapter objectAdapter = new ObjectOfInterestAdapter(getActivity(), object);
         final ListView listView = rootView.findViewById(R.id.services_list);
         listView.setAdapter(objectAdapter);
     }
 
+    //Method which will fill create array with adapter and fill with data - for city Brtonigla
     private void callingBrtonigla() {
         final ArrayList<ObjectOfInterest> object = new ArrayList<>();
-        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe, "Object", "Object description", "geo:0,0"));
-        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe, "Object", "Object description", "geo:0,0"));
-        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe, "Object", "Object description", "geo:0,0"));
-        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe, "Object", "Object description", "geo:0,0"));
+        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe,  getString(R.string.NameOfObject), getString(R.string.objectDescription), "geo:0,0"));
+        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe,  getString(R.string.NameOfObject), getString(R.string.objectDescription), "geo:0,0"));
+        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe,  getString(R.string.NameOfObject), getString(R.string.objectDescription), "geo:0,0"));
+        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe,  getString(R.string.NameOfObject), getString(R.string.objectDescription), "geo:0,0"));
 
         ObjectOfInterestAdapter objectAdapter = new ObjectOfInterestAdapter(getActivity(), object);
         final ListView listView = rootView.findViewById(R.id.services_list);
         listView.setAdapter(objectAdapter);
     }
 
+    //Method which will fill create array with adapter and fill with data - for city Umag
     private void callingUmag() {
 
         final ArrayList<ObjectOfInterest> object = new ArrayList<>();
-        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe, "Object", "Object description", "geo:0,0"));
-        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe, "Object", "Object description", "geo:0,0"));
-        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe, "Object", "Object description", "geo:0,0"));
-        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe, "Object", "Object description", "geo:0,0"));
+        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe,  getString(R.string.NameOfObject), getString(R.string.objectDescription), "geo:0,0"));
+        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe,  getString(R.string.NameOfObject), getString(R.string.objectDescription), "geo:0,0"));
+        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe,  getString(R.string.NameOfObject), getString(R.string.objectDescription), "geo:0,0"));
+        object.add(new ObjectOfInterest(R.drawable.blank_image, R.drawable.ic_caffe,  getString(R.string.NameOfObject), getString(R.string.objectDescription), "geo:0,0"));
 
         ObjectOfInterestAdapter objectAdapter = new ObjectOfInterestAdapter(getActivity(), object);
         final ListView listView = rootView.findViewById(R.id.services_list);
