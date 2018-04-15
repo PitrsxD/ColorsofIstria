@@ -15,8 +15,9 @@ public class ObjectOfInterest {
 
     /**
      * Constructor for events in fragment Events
-     * @param dateObject - date of event - string
-     * @param nameOfObject - Name of event - string
+     *
+     * @param dateObject     - date of event - string
+     * @param nameOfObject   - Name of event - string
      * @param describeObject - description od event - string
      */
     public ObjectOfInterest(String dateObject, String nameOfObject, String describeObject) {
@@ -27,11 +28,12 @@ public class ObjectOfInterest {
 
     /**
      * Constructor for object of interest/services in fragments City info and Services
-     * @param imageSourceID - Image of object - int
-     * @param iconSourceID  - icon of object - int
-     * @param nameOfObject - name of object - string
+     *
+     * @param imageSourceID  - Image of object - int
+     * @param iconSourceID   - icon of object - int
+     * @param nameOfObject   - name of object - string
      * @param describeObject - description of object - string
-     * @param GpsOfObject - GPS coordinates of object - string
+     * @param GpsOfObject    - GPS coordinates of object - string
      */
     public ObjectOfInterest(int imageSourceID, int iconSourceID, String nameOfObject, String describeObject, String GpsOfObject) {
         mImageResourceID = imageSourceID;

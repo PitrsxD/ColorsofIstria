@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
+    android:layout_marginBottom="@dimen/margin_top_bottom"
     android:layout_marginTop="@dimen/margin_top_bottom"
-    android:layout_marginBottom="@dimen/margin_top_bottom">
+    android:orientation="horizontal">
 
     <RelativeLayout
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/object_preview"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_gravity="center_vertical"
-        android:scaleType="centerCrop"/>
+        <ImageView
+            android:id="@+id/object_preview"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop" />
 
         <TextView
             android:id="@+id/date_object"
+            style="@style/ObjectHeader"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            tools:text="14. 5."
             android:gravity="center"
-            style="@style/ObjectHeader"/>
+            tools:text="14. 5." />
 
     </RelativeLayout>
 
     <LinearLayout
-        android:layout_weight="1"
         android:layout_width="0dp"
         android:layout_height="80dp"
-        android:orientation="vertical"
-        android:layout_marginStart="@dimen/margin_start_end"
         android:layout_marginEnd="@dimen/margin_start_end"
-        android:gravity="center_vertical">
+        android:layout_marginStart="@dimen/margin_start_end"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
         <TextView
             android:id="@+id/object_name"
+            style="@style/ObjectHeader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/ObjectHeader"
-            tools:text="Object name"/>
+            tools:text="Object name" />
 
         <TextView
             android:id="@+id/object_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="Object description"/>
+            tools:text="Object description" />
 
     </LinearLayout>
 
     <ImageView
-        android:layout_weight="0.2"
         android:id="@+id/object_image_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/margin_start_end"
         android:layout_marginStart="@dimen/margin_start_end"
-        android:layout_marginEnd="@dimen/margin_start_end"/>
+        android:layout_weight="0.2" />
 
     <ImageView
-        android:layout_weight="0.2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_arrow"
-        android:layout_gravity="center_vertical"/>
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.2"
+        android:src="@drawable/ic_arrow" />
 
 
 </LinearLayout>

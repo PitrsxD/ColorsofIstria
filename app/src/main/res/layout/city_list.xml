@@ -1,37 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_gravity="center_horizontal"
->
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginStart="@dimen/margin_start_end"
-        android:layout_marginEnd="@dimen/margin_start_end"
-        android:layout_marginTop="@dimen/margin_top_bottom"
-        android:layout_marginBottom="@dimen/margin_top_bottom">
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/the_best_of_city"
-        style="@style/CityHeader"
-        android:textColor="@color/grey"
-        android:layout_marginTop="@dimen/margin_top_bottom"
         android:layout_marginBottom="@dimen/margin_top_bottom"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_marginEnd="@dimen/margin_start_end"
+        android:layout_marginStart="@dimen/margin_start_end"
+        android:layout_marginTop="@dimen/margin_top_bottom"
+        android:orientation="vertical">
 
-    <ListView
-        android:id="@+id/best_of_city_list"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:drawSelectorOnTop="true"/>
+
+        <TextView
+            style="@style/CityHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_top_bottom"
+            android:layout_marginTop="@dimen/margin_top_bottom"
+            android:text="@string/the_best_of_city"
+            android:textColor="@color/grey" />
+
+        <ListView
+            android:id="@+id/best_of_city_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawSelectorOnTop="true"
+            android:orientation="vertical" />
 
     </LinearLayout>
 </LinearLayout>

@@ -23,7 +23,7 @@ public class InfoAboutCityUmag extends AppCompatActivity {
         ViewPager cityPager = findViewById(R.id.city_pager);
 
         // Create an adapter that knows which fragment should be shown on each page
-        SimpleFragmentPagerAdapter adapter = new SimpleFragmentPagerAdapter(getSupportFragmentManager());
+        SimpleFragmentPagerAdapter adapter = new SimpleFragmentPagerAdapter(getSupportFragmentManager(), this);
 
         // Set the adapter onto the view pager
         cityPager.setAdapter(adapter);

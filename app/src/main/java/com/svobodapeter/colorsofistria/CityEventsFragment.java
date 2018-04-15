@@ -61,10 +61,11 @@ public class CityEventsFragment extends android.support.v4.app.Fragment {
     private void callingBuje() {
         final ArrayList<ObjectOfInterest> object = new ArrayList<>();
 
-        object.add(new ObjectOfInterest("4. 12.", "Object", "Object description"));
-        object.add(new ObjectOfInterest("4. 12.", "Object", "Object description"));
-        object.add(new ObjectOfInterest("4. 12.", "Object", "Object description"));
-        object.add(new ObjectOfInterest("4. 12.", "Object", "Object description"));
+        object.add(new ObjectOfInterest(getString(R.string.dateOfEvent), getString(R.string.NameOfObject), getString(R.string.objectDescription)));
+        object.add(new ObjectOfInterest(getString(R.string.dateOfEvent), getString(R.string.NameOfObject), getString(R.string.objectDescription)));
+        object.add(new ObjectOfInterest(getString(R.string.dateOfEvent), getString(R.string.NameOfObject), getString(R.string.objectDescription)));
+        object.add(new ObjectOfInterest(getString(R.string.dateOfEvent), getString(R.string.NameOfObject), getString(R.string.objectDescription)));
+
 
         ObjectOfInterestAdapter objectAdapter = new ObjectOfInterestAdapter(getActivity(), object);
         final ListView listView = rootView.findViewById(R.id.events_list);
@@ -77,10 +78,10 @@ public class CityEventsFragment extends android.support.v4.app.Fragment {
     private void callingNovigrad() {
         final ArrayList<ObjectOfInterest> object = new ArrayList<>();
 
-        object.add(new ObjectOfInterest("4. 12.", "Object", "Object description"));
-        object.add(new ObjectOfInterest("4. 12.", "Object", "Object description"));
-        object.add(new ObjectOfInterest("4. 12.", "Object", "Object description"));
-        object.add(new ObjectOfInterest("4. 12.", "Object", "Object description"));
+        object.add(new ObjectOfInterest(getString(R.string.dateOfEvent), getString(R.string.NameOfObject), getString(R.string.objectDescription)));
+        object.add(new ObjectOfInterest(getString(R.string.dateOfEvent), getString(R.string.NameOfObject), getString(R.string.objectDescription)));
+        object.add(new ObjectOfInterest(getString(R.string.dateOfEvent), getString(R.string.NameOfObject), getString(R.string.objectDescription)));
+        object.add(new ObjectOfInterest(getString(R.string.dateOfEvent), getString(R.string.NameOfObject), getString(R.string.objectDescription)));
 
         ObjectOfInterestAdapter objectAdapter = new ObjectOfInterestAdapter(getActivity(), object);
         final ListView listView = rootView.findViewById(R.id.events_list);
@@ -93,10 +94,10 @@ public class CityEventsFragment extends android.support.v4.app.Fragment {
     private void callingBrtonigla() {
         final ArrayList<ObjectOfInterest> object = new ArrayList<>();
 
-        object.add(new ObjectOfInterest("4. 12.", "Object", "Object description"));
-        object.add(new ObjectOfInterest("4. 12.", "Object", "Object description"));
-        object.add(new ObjectOfInterest("4. 12.", "Object", "Object description"));
-        object.add(new ObjectOfInterest("4. 12.", "Object", "Object description"));
+        object.add(new ObjectOfInterest(getString(R.string.dateOfEvent), getString(R.string.NameOfObject), getString(R.string.objectDescription)));
+        object.add(new ObjectOfInterest(getString(R.string.dateOfEvent), getString(R.string.NameOfObject), getString(R.string.objectDescription)));
+        object.add(new ObjectOfInterest(getString(R.string.dateOfEvent), getString(R.string.NameOfObject), getString(R.string.objectDescription)));
+        object.add(new ObjectOfInterest(getString(R.string.dateOfEvent), getString(R.string.NameOfObject), getString(R.string.objectDescription)));
 
         ObjectOfInterestAdapter objectAdapter = new ObjectOfInterestAdapter(getActivity(), object);
         final ListView listView = rootView.findViewById(R.id.events_list);
@@ -108,10 +109,10 @@ public class CityEventsFragment extends android.support.v4.app.Fragment {
      */
     private void callingUmag() {
         final ArrayList<ObjectOfInterest> object = new ArrayList<>();
-        object.add(new ObjectOfInterest("4. 12.", "Object", "Object description"));
-        object.add(new ObjectOfInterest("4. 12.", "Object", "Object description"));
-        object.add(new ObjectOfInterest("4. 12.", "Object", "Object description"));
-        object.add(new ObjectOfInterest("4. 12.", "Object", "Object description"));
+        object.add(new ObjectOfInterest(getString(R.string.dateOfEvent), getString(R.string.NameOfObject), getString(R.string.objectDescription)));
+        object.add(new ObjectOfInterest(getString(R.string.dateOfEvent), getString(R.string.NameOfObject), getString(R.string.objectDescription)));
+        object.add(new ObjectOfInterest(getString(R.string.dateOfEvent), getString(R.string.NameOfObject), getString(R.string.objectDescription)));
+        object.add(new ObjectOfInterest(getString(R.string.dateOfEvent), getString(R.string.NameOfObject), getString(R.string.objectDescription)));
 
         ObjectOfInterestAdapter objectAdapter = new ObjectOfInterestAdapter(getActivity(), object);
         final ListView listView = rootView.findViewById(R.id.events_list);

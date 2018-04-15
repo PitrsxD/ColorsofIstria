@@ -1,5 +1,6 @@
 package com.svobodapeter.colorsofistria;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
@@ -27,7 +28,7 @@ public class InfoAboutCityBrtonigla extends AppCompatActivity {
         ViewPager cityPager = findViewById(R.id.city_pager);
 
         // Create an adapter that knows which fragment should be shown on each page
-        SimpleFragmentPagerAdapter adapter = new SimpleFragmentPagerAdapter(getSupportFragmentManager());
+        SimpleFragmentPagerAdapter adapter = new SimpleFragmentPagerAdapter(getSupportFragmentManager(), this);
 
         // Set the adapter onto the view pager
         cityPager.setAdapter(adapter);

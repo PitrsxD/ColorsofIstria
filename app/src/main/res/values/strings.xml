@@ -45,4 +45,11 @@
     <string name="buje_main_square_description">Old town of Buje</string>
     <string name="recent_events">Recent Events</string>
     <string name="services_of_city">Services in city</string>
+    <string name="dateOfEvent">4. 12.</string>
+    <string name="NameOfObject">Object</string>
+    <string name="objectDescription">Object description</string>
+    <string name="tabLayout_city_info">City Info</string>
+    <string name="city_info">City info</string>
+    <string name="tabLayout_city_events">Events</string>
+    <string name="tabLayout_city_services">Services</string>
 </resources>

@@ -24,6 +24,7 @@ public class ObjectOfInterestAdapter extends ArrayAdapter<ObjectOfInterest> {
 
     /**
      * Will get position of view which is necessary to inflate with data from ObjectOfInterest.class
+     *
      * @param position
      * @param convertView
      * @param parent
